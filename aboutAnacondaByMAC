@@ -28,3 +28,12 @@ conda deactivate
 mkdir first_vitualenv #建一个文件夹作肉身,记下地址$PATH
 conda create --prefix='$PATH' python=3.7  #嘿嘿 $PATH即.../first_vitualenv; python=3.7为想要安装的版本
 
+【如果找不到conda的门了怎么办】
+e.p.-bash: conda: command not found #这种问题出现的原因是conda不在系统的环境变量里面了
+sudo vi ~/.bash_profile #sudo赋权对系统环境变量进行更改；vi指环境变量；~或~/代表在根目录下寻找
+#接下来就会弹出bash_profile文档，在文档中添加anaconda环境对应路径即可
+source ~/.bash_profile #令环境立即生效
+conda env list #检查一下，哦了
+
+
+

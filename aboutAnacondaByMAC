@@ -1,0 +1,30 @@
+ALL ABOUT ANACONDA
+
+【STEP1: install python3】
+python -V #查看系统自带python版本
+python3 -V #查看python3版本，如果没有，会自动提示下载
+pip3 -V #检查一下python3的安装成功了吗;如成功会显示pip版本
+#pip是Python官方的包管理工具;conda是anaconda的包管理工具
+
+【STEP2: install anaconda3】
+conda info #查看conda详细信息
+
+【STEP3:anaconda configuration】
+#见视频
+.
+..
+...
+....
+.....
+......
+
+【STEP N:装好啦！可以用啦！】
+conda --version #查看版本
+conda env list #查看现存所有虚拟环境
+conda activate (后面可加具体环境地址；若没有默认anaconda自带base环境) #激活环境
+conda deactivate
+
+【STEP N+1: create a new virtual environment】
+mkdir first_vitualenv #建一个文件夹作肉身,记下地址$PATH
+conda create --prefix='$PATH' python=3.7  #嘿嘿 $PATH即.../first_vitualenv; python=3.7为想要安装的版本
+
